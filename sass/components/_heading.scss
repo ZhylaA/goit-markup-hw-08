@@ -1,8 +1,6 @@
 .heading {
-  display: flex;
-  justify-content: center;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: $secondaryColor;
   background-image: linear-gradient(
       to right,
@@ -13,6 +11,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    padding: 200px 0;
+  }
 }
 .heading__title {
   font-size: 44px;
@@ -25,4 +27,9 @@
   margin-bottom: 30px;
   max-width: 696px;
   color: $whiteColor;
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+  }
 }
