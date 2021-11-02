@@ -1,0 +1,62 @@
+.clients {
+  padding: 94px 0;
+}
+.clients__title {
+  justify-content: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $basicColor;
+}
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients__item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid $colorSoc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  @extend %align;
+  fill: $colorSoc;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  fill: $colorSoc;
+  transition: fill $timeDuration $cubicBezier,
+    border-color $timeDuration $cubicBezier;
+}
+.clients__link {
+  @extend %align;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $secondaryColor;
+  border-radius: 4px;
+  transition: fill $timeDuration $cubicBezier,
+    border-color $timeDuration $cubicBezier;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: $blueColor;
+  }
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: $blueColor;
+  }
+}
+
+.use {
+  &:hover {
+    fill: $blueColor;
+  }
+}

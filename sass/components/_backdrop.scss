@@ -1,0 +1,17 @@
+.backdrop {
+  position: fixed;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  @extend %align;
+  transition: opacity $timeDuration $cubicBezier,
+    visibility $timeDuration $cubicBezier;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

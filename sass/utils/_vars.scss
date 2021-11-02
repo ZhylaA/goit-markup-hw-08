@@ -1,0 +1,13 @@
+$basicColor: #212121;
+$secondaryColor: #757575;
+$blueColor: #2196f3;
+$whiteColor: #ffffff;
+$colorSoc: #afb1b8;
+$cubicBezier: cubic-bezier(0.4, 0, 0.2, 1);
+$timeDuration: 250ms;
+
+%align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,28 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 200px 0;
+  background-color: $secondaryColor;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heading.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.heading__title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+  color: $whiteColor;
+}

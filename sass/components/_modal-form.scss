@@ -1,0 +1,59 @@
+.form {
+  margin-left: 93px;
+}
+.form__title {
+  font-weight: bold;
+  color: $whiteColor;
+  font-size: 14px;
+  line-height: calc (16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.form__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: transparent;
+  padding-left: 15px;
+  color: $whiteColor;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer__ok {
+  margin-left: 10px;
+}
+
+.check__deal {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: $secondaryColor;
+  display: flex;
+  margin-bottom: 30px;
+  margin-right: 7px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  span {
+    width: 16px;
+    height: 16px;
+    border: 2px solid $blueColor;
+    border-radius: 4px;
+    .checkbox:checked + & {
+      background-color: $blueColor;
+      border: none;
+    }
+  }
+}
+
+.check__modal {
+  margin-right: 7px;
+}
+.deal {
+  color: $blueColor;
+}
