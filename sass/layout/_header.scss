@@ -80,7 +80,9 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $secondaryColor;
-  @extend %align;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: currentColor;
   transition: color $timeDuration $cubicBezier, fill $timeDuration $cubicBezier;
   &:hover,

@@ -85,7 +85,9 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  @extend %align;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   &:hover,
   &:focus {
