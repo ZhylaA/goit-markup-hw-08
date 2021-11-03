@@ -1,8 +1,10 @@
 .header {
   border: 1px solid #eeeeee;
   border-top: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
 }
 .header__container {
   display: flex;
@@ -13,10 +15,10 @@
   align-items: center;
 }
 .header-list {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
+  display: none;
+  // align-items: center;
+  // text-decoration: none;
+  // list-style: none;
 }
 .header-list__item {
   &:not(:last-child) {
@@ -40,9 +42,9 @@
 }
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  display: none;
+  // margin-left: auto;
+  // align-items: center;
 }
 
 .logo {
@@ -111,4 +113,38 @@
     bottom: -34px;
     border-radius: 10px;
   }
+}
+.menu-open-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $blueColor;
+  }
+}
+.menu-open-btn svg {
+  width: 24px;
+  height: 16px;
+  display: block;
+  position: relative;
+}
+.menu-open-btn svg::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+.mob-menu {
+  position: absolute;
+  background-color: $whiteColor;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
 }
