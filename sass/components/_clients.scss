@@ -1,32 +1,48 @@
 .clients__title {
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-size: 28px;
+  line-height: calc(32 / 28);
   text-align: center;
   letter-spacing: 0.03em;
   color: $basicColor;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
+
 .clients__item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid $colorSoc;
+  border: 0px solid $colorSoc;
   box-sizing: border-box;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   fill: $colorSoc;
-  & + & {
-    margin-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
   }
 }
+
+// & + & {
+// }
 
 .clients__icon {
   width: 106px;
@@ -40,8 +56,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid $secondaryColor;
   border-radius: 4px;
   transition: fill $timeDuration $cubicBezier,
@@ -54,6 +68,18 @@
   &:hover .clients__icon,
   &:focus .clients__icon {
     fill: $blueColor;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
   }
 }
 
