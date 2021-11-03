@@ -268,7 +268,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .heading__container {
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -388,6 +388,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .advantage-list__title {
+    text-align: left;
+  }
+}
+
 .advantage-list__description {
   font-size: 14px;
   line-height: 1.71;
@@ -404,6 +410,16 @@ body {
 @media screen and (min-width: 768px) {
   .advantage-list__description {
     max-width: 270 px;
+  }
+}
+
+.specialization {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .specialization {
+    display: block;
   }
 }
 
