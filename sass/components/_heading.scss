@@ -1,9 +1,12 @@
 .heading {
   max-width: 1600px;
   margin: 0 auto;
+  // margin-right: 0;
+  // margin-left: 0;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,9 +83,10 @@
 }
 .heading__container {
   margin: 0 auto;
-  max-width: 360px;
-
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
   @media screen and (min-width: 1200px) {
-    max-width: 696px;
+    width: 696px;
   }
 }

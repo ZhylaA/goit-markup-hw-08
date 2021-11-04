@@ -67,12 +67,20 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="menu-open-btn">
+      </div>
+      <div class="container mob-menu">
+        <a href="WebStudio" class="logo link">
+            <span class="accent">Web</span>Studio</a
+          >
+      <button type="button" class="menu-open-btn js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
           <svg> <use href="./images/sprite.svg#icon-menu"></use></svg>
         </button>
-      </div>
-      <div class="mob-menu">
-        <ul class="mob-menu-list">
+        <div class="container-mob js-menu-container" id="mobile-menu">
+          <button type="button" class="menu-close-btn js-close-menu">
+          <svg> <use href="./images/sprite.svg#icon-close-mob"></use></svg>
+        </button>
+          <ul class="mob-menu-list list">
           <li class="mob-menu-item">
             <a href="" class="mob-menu-link">Студия</a>
           </li>
@@ -83,6 +91,7 @@
             <a href="" class="mob-menu-link">Контакты</a>
           </li>
         </ul>
+        <div class="mob-menu-bottom">
         <ul class="mob-contacts-list">
           <li class="mob-contacts-item">
             <a href="tel:+380961111111" class="mob-contacts-link">
@@ -108,7 +117,12 @@
             <a href="" class="mob-social-link">LinkedIn</a>
           </li>
         </ul>
-      </div>
+        
+        </div>
+        
+        </div>
+        
+        </div>
     </header>
     <main class="main">
       <section class="heading">
@@ -118,7 +132,7 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> 
       <section class="section">
         <div class="container">
           <h2 style="display: none">наши преимущества</h2>
@@ -563,5 +577,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    
   </body>
 </html>
