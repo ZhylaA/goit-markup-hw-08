@@ -97,12 +97,16 @@
   justify-content: center;
   text-align: center;
 }
-.form-mob .form__label {
+.form__label {
   display: flex;
   justify-content: center;
-  width: 450px;
+  width: auto;
+  // width: 450px;
   height: 50px;
   margin: 20px auto;
+  // display: inline;
+  // width: auto;
+  // height: auto;
 }
 .form-mob .btn {
   display: flex;
