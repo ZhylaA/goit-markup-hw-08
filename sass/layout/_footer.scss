@@ -1,20 +1,40 @@
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  margin: 0 auto;
 }
 .footer__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width:768px) {
+    width: 100%;
+    flex-wrap: wrap-reverse;
+  }
+  @media screen and(min-width:1200px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 .footer-contacts-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  // margin-right: 70px;
 }
 .footer__logo {
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
   color: $whiteColor;
+  text-align: center;
+  margin-right: 0;
 }
+
 .address {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
 }
 .address__mail {
@@ -40,6 +60,12 @@
   line-height: 24px;
   color: $whiteColor;
 }
+.comin.social {
+  justify-content: center;
+}
+.comin {
+  margin-bottom: 30px;
+}
 .comin .social__icon {
   fill: $whiteColor;
   color: $whiteColor;
@@ -51,6 +77,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $whiteColor;
+  text-align: center;
 }
 .footer-social-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -64,4 +91,22 @@
       fill: $whiteColor;
     }
   }
+}
+.form-mob .form__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.form-mob .form__label {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: 50px;
+  margin: 20px auto;
+}
+.form-mob .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
