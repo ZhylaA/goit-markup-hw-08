@@ -1,10 +1,19 @@
 .modal {
   position: relative;
-  width: 530px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
   background-color: $whiteColor;
   padding: 40px;
+  @media screen and (min-width: 1200px) {
+    width: 530px;
+    height: 580px;
+    &.modal__title {
+      font-style: 14px;
+    }
+  }
 }
 .modal__title {
   font-weight: bold;

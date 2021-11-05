@@ -1079,11 +1079,23 @@ body {
 
 .modal {
   position: relative;
-  width: 530px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    height: 580px;
+  }
+  .modal.modal__title {
+    font-style: 14px;
+  }
 }
 
 .modal__title {
@@ -1219,20 +1231,28 @@ body {
 }
 
 .check__deal {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: calc(14 / 12);
   color: #757575;
   display: flex;
   margin-bottom: 30px;
-  margin-right: 7px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  font-size: 11px;
+  line-height: calc(14 / 11);
+}
+
+@media screen and (min-width: 1200px) {
+  .check__deal {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .check__deal span {
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 2px solid #2196f3;
   border-radius: 4px;
 }
@@ -1240,10 +1260,6 @@ body {
 .checkbox:checked + .check__deal span {
   background-color: #2196f3;
   border: none;
-}
-
-.check__modal {
-  margin-right: 7px;
 }
 
 .deal {

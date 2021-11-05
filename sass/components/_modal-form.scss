@@ -30,18 +30,23 @@
 }
 
 .check__deal {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: calc(14 / 12);
   color: $secondaryColor;
   display: flex;
   margin-bottom: 30px;
-  margin-right: 7px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  font-size: 11px;
+  line-height: calc(14 / 11);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
   span {
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 2px solid $blueColor;
     border-radius: 4px;
     .checkbox:checked + & {
@@ -51,9 +56,6 @@
   }
 }
 
-.check__modal {
-  margin-right: 7px;
-}
 .deal {
   color: $blueColor;
 }
