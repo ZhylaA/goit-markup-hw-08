@@ -68,16 +68,24 @@
     margin-left: 84px;
     & .header-contacts__item {
       margin-bottom: 10px;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+      }
+      align-items: center;
     }
-    align-items: center;
-  }
-  & .header-contacts__link:hover .header-contacts__icon,
-  & .header-contacts__link:focus .header-contacts__icon {
-    fill: $blueColor;
+    & .header-contacts__link:hover .header-contacts__icon,
+    & .header-contacts__link:focus .header-contacts__icon {
+      fill: $blueColor;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
   }
 }
 
 .header-contacts__item {
+  margin-bottom: 10px;
   &:not(:last-child) {
     margin-right: 30px;
   }
