@@ -1,6 +1,5 @@
 .footer {
   background-color: #2f303a;
-
   padding: 60px 0;
   width: 100%;
   // margin: 0 auto;
@@ -17,8 +16,10 @@
   @media screen and(min-width:768px) {
     display: flex;
     width: 100%;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     flex-grow: 2;
+    align-items: baseline;
+    justify-content: start;
   }
   @media screen and(min-width:1200px) {
     display: flex;
@@ -45,6 +46,12 @@
 
 .footer-contacts-container {
   // margin-bottom: 60px;
+  margin-right: 50px;
+  @media screen and(min-width:768px) {
+    margin-left: 76px;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
   @media screen and(min-width:1200px) {
     margin-right: 70px;
   }
@@ -56,6 +63,11 @@
   color: $whiteColor;
   text-align: center;
   margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    margin-bottom: 10px;
+  }
 }
 
 .address {
@@ -89,6 +101,11 @@
   color: $whiteColor;
 }
 .comin {
+  margin-right: 50px;
+  @media screen and(min-width:768px) {
+    margin-left: 165px;
+    margin-right: 0px;
+  }
   @media screen and(min-width:1200px) {
     margin-right: 93px;
   }
@@ -123,6 +140,11 @@
       color: $whiteColor;
       fill: $whiteColor;
     }
+  }
+}
+.form-mob {
+  @media screen and(min-width:768px) {
+    margin-left: 166px;
   }
 }
 .form-mob .form__title {
