@@ -4,7 +4,7 @@
   @media screen and(max-width: 767px) {
     align-items: center;
     justify-content: start;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   @media screen and(min-width: 768px) {
@@ -20,6 +20,11 @@
 }
 
 .portfolio-list__item {
+  margin-bottom: 15px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
   &:not(:last-child) {
     margin-right: 8px;
   }
