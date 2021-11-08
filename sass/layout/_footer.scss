@@ -47,22 +47,22 @@
   }
   @media screen and(min-width:1200px) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
   }
 }
 .footer__logo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
   color: $whiteColor;
   text-align: center;
   margin-right: 0;
-
   @media screen and (min-width: 1200px) {
-    display: flex;
     justify-content: flex-start;
+    align-items: center;
     font-size: 26px;
     line-height: calc(30 / 26);
     margin-bottom: 10px;

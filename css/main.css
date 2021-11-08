@@ -1018,7 +1018,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-contacts-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -1026,6 +1026,7 @@ body {
 
 .footer__logo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
   color: #ffffff;
@@ -1035,8 +1036,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__logo {
-    display: flex;
     justify-content: flex-start;
+    align-items: center;
     font-size: 26px;
     line-height: calc(30 / 26);
     margin-bottom: 10px;
