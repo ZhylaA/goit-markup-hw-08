@@ -982,7 +982,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: flex;
-    max-width: 1199px;
+    max-width: 768px;
     flex-wrap: wrap;
     flex-grow: 2;
     align-items: baseline;
@@ -1017,6 +1017,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-contacts-container {
+    margin-bottom: 0;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -1118,6 +1119,7 @@ body {
 @media screen and (min-width: 1200px) {
   .comin {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
